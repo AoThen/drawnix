@@ -51,9 +51,9 @@ jobs:
           tags: |
             ghcr.io/${{ env.LOWER_NAME }}:latest
 
-        # ghcr.io/${{ env.LOWER_NAME }}:${{ env.VERSION }}
-        # ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest
-        # ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:${{ env.VERSION }}
+# ghcr.io/${{ env.LOWER_NAME }}:${{ env.VERSION }}
+# ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest
+# ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:${{ env.VERSION }}
 
 
       - uses: actions/delete-package-versions@v5
