@@ -1,11 +1,11 @@
-FROM node:20 AS builder 
+FROM node:20-slim AS builder
 
 WORKDIR /builder
 
 COPY . /builder
 
 RUN npm install \
-    && npm run build 
+    && npm run build && rm -rf /tmp/*
 
 
 FROM lipanski/docker-static-website:2.4.0
